@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateContoller">
+   <children>
+       <TableView fx:id="tableViewProbe" layoutX="120.0" layoutY="100.0" prefHeight="200.0" prefWidth="360.0">
+           <columns>
+               <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="ID" />
+               <TableColumn fx:id="tableColumnDistanta" prefWidth="75.0" text="Distanta" />
+               <TableColumn fx:id="tableColumnStil" prefWidth="86.4000030517578" text="Stil" />
+            <TableColumn fx:id="tableColumnNr" prefWidth="121.60003662109375" text="Nr Participanti" />
+           </columns>
+       </TableView>
+      <Label layoutX="271.0" layoutY="24.0" text="Actualizare" />
+   </children>
+</AnchorPane>

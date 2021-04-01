@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListeProbeController">
+   <children>
+      <TableView fx:id="tableViewProbe" layoutX="46.0" layoutY="100.0" onMouseClicked="#handleProbaClicked" prefHeight="200.0" prefWidth="237.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tableColumnDistanta" prefWidth="75.0" text="Distanta" />
+            <TableColumn fx:id="tableColumnStil" prefWidth="86.4000030517578" text="Stil" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewParticipanti" layoutX="337.0" layoutY="100.0" onMouseClicked="#handleParticipantClicked" prefHeight="200.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNume" prefWidth="149.39996337890625" text="Nume" />
+          <TableColumn fx:id="tableColumnVarsta" prefWidth="65.19998168945312" text="Varsta" />
+            <TableColumn fx:id="tableColumnIdParticipant" prefWidth="48.4000244140625" text="ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="151.0" layoutY="46.0" text="Lista Probelor" />
+      <Label layoutX="449.0" layoutY="55.0" text="Lista Participantilor" />
+      <TableView fx:id="tableViewProbeParticipant" layoutX="626.0" layoutY="100.0" prefHeight="200.0" prefWidth="244.0">
+        <columns>
+          <TableColumn fx:id="tableColumnIDP" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tableColumnDistantaP" prefWidth="75.0" text="Distanta" />
+            <TableColumn fx:id="tableColumnStilP" prefWidth="92.79998779296875" text="Stil" />
+        </columns>
+      </TableView>
+      <Button layoutX="451.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#handleButton" text="Inscrie" />
+      <Label layoutX="734.0" layoutY="55.0" text="Lista probelor a participantului" />
+      <Button fx:id="button" layoutX="722.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#handleLogout" text="Logout" />
+   </children>
+</AnchorPane>
